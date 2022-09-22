@@ -1,13 +1,12 @@
-# Food AI: Cross-modal Representation Learning and Retrieval
-Code for the CS 536: Machine Learning project at Rutgers University. Inspired by the CVPR paper [Learning Cross-Modal Embeddings with Adversarial Networks 
-for Cooking Recipes and Food Images](https://arxiv.org/abs/1905.01273)
+# Food AI: Cross-modal Representation Learning and Food Recipe Retrieval
+Code for the CS 536: Machine Learning project at Rutgers University. Inspired by the CVPR paper [Learning Cross-Modal Embeddings for Cooking Recipes and Food Images](https://ieeexplore.ieee.org/document/8099810)
 
 -----------------------------------------
 ### Work Done
 
-* Beat the baseline retrieval performance in the original im2recipe paper for the Recipe1M cross-modal food recipe retrieval task by 80% by improving on the feature extraction pipeline
-* Improved retrieval performance by learning shared multi-modal representations using CCA and non-linear neural networks trained using Triplet Loss
-* Enhanced the explainability of the system by incorporating Vision Transformers and cross-modal attention when learning shared representations
+* Performed retrieval of food recipes given food images and vice versa using crossmodal techniques.
+* Improved the representation learning pipeline for both recipe text and recipe images and beat the baseline top-10 recall for image-to-recipe retrieval in the original paper by 20 percentage points
+* Measured retrieval metrics employing three techniques: CCA and neural networks trained for retrieval on learnt representations using 1) MSE Loss, and 2) Triplet Loss. Attained median retrieval rank of 1 and top-10 recall of 82.49% for 1,000 random food images using Triplet Loss trained neural networks.
 
 ***
 
@@ -27,7 +26,7 @@ You can access the report [here](https://github.com/kunjmehta/cross-modal-retrie
 
 ### Research Papers Referred
 
-* [Learning Cross-Modal Embeddings with Adversarial Networks for Cooking Recipes and Food Images](https://arxiv.org/abs/1905.01273)
+* [Learning Cross-Modal Embeddings for Cooking Recipes and Food Images](https://ieeexplore.ieee.org/document/8099810)
 * [Recipe1M+: A Dataset for Learning Cross-Modal Embeddings for Cooking Recipes and Food Images](https://arxiv.org/abs/1810.06553)
 * [Cross-Modal Retrieval and Synthesis (X-MRS): Closing the Modality Gap in Shared Representation Learning](https://arxiv.org/abs/2012.01345)
 * [MCEN: Bridging Cross-Modal Gap between Cooking Recipes and Dish Images with Latent Variable Model](https://arxiv.org/abs/2004.01095)
@@ -35,7 +34,8 @@ You can access the report [here](https://github.com/kunjmehta/cross-modal-retrie
 
 
 ### Structure and Acknowledgements 
-The file "Step1 + Step2.ipynb" contains code retrieval results using CCA and non-linear neural networks. The file "Step3.ipynb"  contains code for enhancing the explainability
-of the model using Vision Transformers and cross-modal learning. The file "Viz.ipynb" contains code and visualizations seen in the report.
+The file "Step1" contains code and retrieval results using the improved representation learning pipeline and CCA. The file "Step2a.ipynb"  contains code pertaining to the neural network training and evaluation when trained with MSE Loss. The file "Step2b.ipynb" contains similar code but for networks trained using Triplet Loss with random negative sampling.
+
+The file "Viz.ipynb" contains code and visualizations seen in the report.
 
 Made as a team with [@Neil-98](https://github.com/Neil-98), Aishwarya Harpale and Linqi Xiao
