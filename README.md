@@ -34,8 +34,12 @@ You can access the report [here](https://github.com/kunjmehta/cross-modal-retrie
 
 
 ### Structure and Acknowledgements 
-The file "Step1" contains code and retrieval results using the improved representation learning pipeline and CCA. The file "Step2a.ipynb"  contains code pertaining to the neural network training and evaluation when trained with MSE Loss. The file "Step2b.ipynb" contains similar code but for networks trained using Triplet Loss with random negative sampling.
 
-The file "Viz.ipynb" contains code and visualizations seen in the report.
+* "Step1.ipynb": Contains code and retrieval results using the improved representation learning pipeline and CCA. 
+* "Step2a.ipynb": Contains code pertaining to the neural network training and evaluation when trained with MSE Loss. 
+* "Step2b.ipynb": Contains similar code but for networks trained using Triplet Loss with random negative sampling.
+* "Viz.ipynb": contains code and visualizations seen in the report.
+
+Note: "Step-3.ipynb" is extra part of the project that aimed to enhance the explanibility of the retrieval system by leveraging attention mechanisms in ViT and BERT
 
 Made as a team with [@Neil-98](https://github.com/Neil-98), Aishwarya Harpale and Linqi Xiao
