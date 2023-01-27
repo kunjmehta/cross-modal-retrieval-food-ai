@@ -4,9 +4,9 @@ Code for the CS 536: Machine Learning project at Rutgers University. Inspired by
 -----------------------------------------
 ### Work Done
 
-* Performed retrieval of food recipes given food images and vice versa using crossmodal techniques.
-* Improved the representation learning pipeline for both recipe text and recipe images and beat the baseline top-10 recall for image-to-recipe retrieval in the original paper by 20 percentage points
-* Measured retrieval metrics employing three techniques: CCA and neural networks trained for retrieval on learnt representations using 1) MSE Loss, and 2) Triplet Loss. Attained median retrieval rank of 1 and top-10 recall of 82.49% for 1,000 random food images using Triplet Loss trained neural networks.
+* Built a system for retrieval of food recipes given images of corresponding food
+* Beat the CCA baseline top-10 recall for recipe retrieval in the original im2recipe paper by 20 percentage points by using  ResNet and BERT feature extractors and introducing cross-modality through a shared embedding layer
+* Implemented a second approach using triplet loss trained neural networks and attained median retrieval rank of 1 and  top-10 recall of 82.49% for 1,000 random food images
 
 ***
 
